@@ -1,8 +1,8 @@
-Django==5.2  # Or your specific Django version
+Django==5.2
 djangorestframework
-psycopg2-binary  # PostgreSQL connector
-corsheaders
-Pillow # For image handling
-whitenoise # For serving static files
-django-environ # For easy environment variable management (recommended)
+psycopg2-binary
+django-cors-headers  # Corrected line
+Pillow
+whitenoise
+django-environ
 # Add any other packages you need ...
