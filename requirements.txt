@@ -1,8 +1,10 @@
-Django==5.2
+Django>=4.0,<5.0 # Hoặc phiên bản Django bạn đang dùng
 djangorestframework
-psycopg2-binary
-django-cors-headers  # Corrected line
-Pillow
-whitenoise
-django-environ
-# Add any other packages you need ...
+django-cors-headers
+psycopg2-binary # Adapter cho PostgreSQL
+gunicorn # WSGI server cho production
+dj-database-url # Để đọc DATABASE_URL từ environment
+whitenoise # Để phục vụ static files hiệu quả
+# Thêm các thư viện khác bạn dùng, ví dụ:
+# Pillow # Nếu bạn xử lý ảnh nhiều (ImageField cần Pillow)
+# djangorestframework-simplejwt # Nếu bạn dùng JWT
