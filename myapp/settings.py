@@ -79,10 +79,9 @@ DATABASES = {
         'USER': env('RENDER_DB_USERNAME'),
         'PASSWORD': env('RENDER_DB_PASSWORD'),
         'HOST': env('RENDER_DB_HOST'),
-        'PORT': env('RENDER_DB_PORT'),
+        'PORT': env.int('RENDER_DB_PORT'), # <-- SỬ DỤNG env.int() ĐỂ ĐẢM BẢO NÓ LÀ SỐ NGUYÊN
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
